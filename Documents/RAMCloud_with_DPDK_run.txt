@@ -1,0 +1,714 @@
+﻿homa@homa1:~/platformlab/RAMCloud/logs/20180608125510$ cat coordinator.homa4.log 
+1528480511.027278629 CoordinatorMain.cc:96 in main NOTICE[1]: Command line: /home/homa/platformlab/RAMCloud/obj.05302018_dpdk/coordinator -C basic+udp:host=10.10.10.14,port=12246 -l NOTICE --logFile logs/20180608125510/coordinator.homa4.log --dpdkPort 0 --configDir config
+1528480511.027309848 CoordinatorMain.cc:97 in main NOTICE[1]: Coordinator process id: 19405
+1528480511.027389904 DpdkDriver.cc:148 in DpdkDriver NOTICE[1]: Using DPDK version DPDK 17.11.0
+1528480511.027516894 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 0 as core 1 on socket 0
+1528480511.027563669 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 1 as core 1 on socket 1
+1528480511.027598499 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 2 as core 1 on socket 2
+1528480511.027639570 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 3 as core 1 on socket 3
+1528480511.027667885 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 4 as core 5 on socket 0
+1528480511.027700560 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 5 as core 5 on socket 1
+1528480511.027736972 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 6 as core 5 on socket 2
+1528480511.027775304 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 7 as core 5 on socket 3
+1528480511.027803987 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 8 as core 16 on socket 0
+1528480511.027836880 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 9 as core 16 on socket 1
+1528480511.027875595 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 10 as core 16 on socket 2
+1528480511.027919137 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 11 as core 16 on socket 3
+1528480511.027947056 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 12 as core 20 on socket 0
+1528480511.027978528 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 13 as core 20 on socket 1
+1528480511.028014341 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 14 as core 20 on socket 2
+1528480511.028053895 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 15 as core 20 on socket 3
+1528480511.028081974 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 16 as core 1 on socket 0
+1528480511.028113582 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 17 as core 1 on socket 1
+1528480511.028148982 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 18 as core 1 on socket 2
+1528480511.028188050 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 19 as core 1 on socket 3
+1528480511.028216823 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 20 as core 5 on socket 0
+1528480511.028248782 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 21 as core 5 on socket 1
+1528480511.028284068 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 22 as core 5 on socket 2
+1528480511.028323656 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 23 as core 5 on socket 3
+1528480511.028351354 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 24 as core 16 on socket 0
+1528480511.028383520 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 25 as core 16 on socket 1
+1528480511.028420541 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 26 as core 16 on socket 2
+1528480511.028460188 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 27 as core 16 on socket 3
+1528480511.028488781 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 28 as core 20 on socket 0
+1528480511.028520474 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 29 as core 20 on socket 1
+1528480511.028555425 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 30 as core 20 on socket 2
+1528480511.028603533 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected lcore 31 as core 20 on socket 3
+1528480511.028931366 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Support maximum 128 logical core(s) by configuration.
+1528480511.028938589 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Detected 32 lcore(s)
+1528480511.035379010 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Probing VFIO support...
+1528480511.035414425 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL:   IOMMU type 1 (Type 1) is supported
+1528480511.035422510 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL:   IOMMU type 7 (sPAPR) is not supported
+1528480511.035426108 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL:   IOMMU type 8 (No-IOMMU) is not supported
+1528480511.035428848 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: VFIO support initialized
+1528480511.035529049 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Setting up physically contiguous memory...
+1528480511.035585761 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Trying to obtain current memory policy.
+1528480546.777302934 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_1 is on socket 3
+1528480546.777347253 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_2 is on socket 3
+1528480546.777349533 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_3 is on socket 3
+1528480546.777351054 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_4 is on socket 3
+1528480546.777352429 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_5 is on socket 3
+1528480546.777368207 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_6 is on socket 3
+1528480546.777369612 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_7 is on socket 3
+1528480546.777370877 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_8 is on socket 3
+1528480546.777372277 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_9 is on socket 3
+1528480546.777373586 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_10 is on socket 3
+1528480546.777374899 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_11 is on socket 3
+1528480546.777376311 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_12 is on socket 3
+1528480546.777377703 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_13 is on socket 3
+1528480546.777378988 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_14 is on socket 3
+1528480546.777380355 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_15 is on socket 3
+1528480546.777381726 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_16 is on socket 3
+1528480546.777396642 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_17 is on socket 3
+1528480546.777398345 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_18 is on socket 3
+1528480546.777399963 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_19 is on socket 3
+1528480546.777404694 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_20 is on socket 3
+1528480546.777406060 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_21 is on socket 3
+1528480546.777407311 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_22 is on socket 3
+1528480546.777408661 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_23 is on socket 3
+1528480546.777410013 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_24 is on socket 3
+1528480546.777411410 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_25 is on socket 3
+1528480546.777412836 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_26 is on socket 0
+1528480546.777414234 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_27 is on socket 0
+1528480546.777428817 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_28 is on socket 0
+1528480546.777430495 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_29 is on socket 0
+1528480546.777432186 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_30 is on socket 0
+1528480546.777433700 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_31 is on socket 0
+1528480546.777435063 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_32 is on socket 0
+1528480546.777436472 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_33 is on socket 0
+1528480546.777437746 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_34 is on socket 0
+1528480546.777439095 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_35 is on socket 0
+1528480546.777454661 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_36 is on socket 0
+1528480546.777456418 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_37 is on socket 0
+1528480546.777457805 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_38 is on socket 0
+1528480546.777471839 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_39 is on socket 0
+1528480546.777476569 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_40 is on socket 0
+1528480546.777478042 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_41 is on socket 0
+1528480546.777479412 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_42 is on socket 0
+1528480546.777480896 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_43 is on socket 0
+1528480546.777482383 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_44 is on socket 0
+1528480546.777483975 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_45 is on socket 0
+1528480546.777486314 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_46 is on socket 0
+1528480546.777487802 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_47 is on socket 0
+1528480546.777490182 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_48 is on socket 0
+1528480546.777492192 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_49 is on socket 0
+1528480546.777506221 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_50 is on socket 0
+1528480546.777510767 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_51 is on socket 1
+1528480546.777512235 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_52 is on socket 1
+1528480546.777513681 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_53 is on socket 1
+1528480546.777515043 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_54 is on socket 1
+1528480546.777516496 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_55 is on socket 1
+1528480546.777520349 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_56 is on socket 1
+1528480546.777522218 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_57 is on socket 1
+1528480546.777523716 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_58 is on socket 1
+1528480546.777525037 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_59 is on socket 1
+1528480546.777526499 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_60 is on socket 1
+1528480546.777540994 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_61 is on socket 1
+1528480546.777545374 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_62 is on socket 1
+1528480546.777546824 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_63 is on socket 1
+1528480546.777548333 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_64 is on socket 1
+1528480546.777549832 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_65 is on socket 1
+1528480546.777551261 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_66 is on socket 1
+1528480546.777553888 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_67 is on socket 1
+1528480546.777555437 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_68 is on socket 1
+1528480546.777557519 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_69 is on socket 1
+1528480546.777558771 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_70 is on socket 1
+1528480546.777560044 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_71 is on socket 1
+1528480546.777574549 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_72 is on socket 1
+1528480546.777579059 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_73 is on socket 1
+1528480546.777580451 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_74 is on socket 1
+1528480546.777581875 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_75 is on socket 2
+1528480546.777583348 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_76 is on socket 2
+1528480546.777584802 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_77 is on socket 2
+1528480546.777586305 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_78 is on socket 2
+1528480546.777588276 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_79 is on socket 2
+1528480546.777589881 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_80 is on socket 2
+1528480546.777591228 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_81 is on socket 2
+1528480546.777592493 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_82 is on socket 2
+1528480546.777607437 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_83 is on socket 2
+1528480546.777613371 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_84 is on socket 2
+1528480546.777614934 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_85 is on socket 2
+1528480546.777616311 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_86 is on socket 2
+1528480546.777617776 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_87 is on socket 2
+1528480546.777619377 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_88 is on socket 2
+1528480546.777622003 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_89 is on socket 2
+1528480546.777623432 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_90 is on socket 2
+1528480546.777625250 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_91 is on socket 2
+1528480546.777627013 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_92 is on socket 2
+1528480546.777628378 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_93 is on socket 2
+1528480546.777654228 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_94 is on socket 2
+1528480546.777658822 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_95 is on socket 2
+1528480546.777660288 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_96 is on socket 2
+1528480546.777661772 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_97 is on socket 2
+1528480546.777663167 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_98 is on socket 2
+1528480546.777664617 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_99 is on socket 2
+1528480546.777666238 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /mnt/huge_1GB/homa4map_0 is on socket 1
+1528480546.778045287 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x640000000 bytes
+1528480546.778082440 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f8980000000 (size = 0x640000000)
+1528480546.785750271 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x640000000 bytes
+1528480546.785759666 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f8300000000 (size = 0x640000000)
+1528480546.793393170 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x640000000 bytes
+1528480546.793401266 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f7c80000000 (size = 0x640000000)
+1528480546.801029052 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x640000000 bytes
+1528480546.801037039 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f7600000000 (size = 0x640000000)
+1528480546.808835237 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Trying to obtain current memory policy.
+1528480547.173611860 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_1 is on socket 3
+1528480547.173635122 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_7 is on socket 3
+1528480547.173637303 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_8 is on socket 3
+1528480547.173639201 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_9 is on socket 3
+1528480547.173641124 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_10 is on socket 3
+1528480547.173657353 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_13 is on socket 3
+1528480547.173659372 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_14 is on socket 3
+1528480547.173661294 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_15 is on socket 3
+1528480547.173663225 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_16 is on socket 3
+1528480547.173665305 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_17 is on socket 3
+1528480547.173667159 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_18 is on socket 3
+1528480547.173670347 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_19 is on socket 3
+1528480547.173672235 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_20 is on socket 3
+1528480547.173674005 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_21 is on socket 3
+1528480547.173675768 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_22 is on socket 3
+1528480547.173677684 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_23 is on socket 3
+1528480547.173693210 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_24 is on socket 3
+1528480547.173698615 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_25 is on socket 3
+1528480547.173700465 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_26 is on socket 3
+1528480547.173702304 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_27 is on socket 3
+1528480547.173704155 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_28 is on socket 3
+1528480547.173708147 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_29 is on socket 3
+1528480547.173710291 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_30 is on socket 3
+1528480547.173712460 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_31 is on socket 3
+1528480547.173714404 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_32 is on socket 3
+1528480547.173716262 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_33 is on socket 3
+1528480547.173718024 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_34 is on socket 3
+1528480547.173719844 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_35 is on socket 3
+1528480547.173735231 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_36 is on socket 3
+1528480547.173740537 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_37 is on socket 3
+1528480547.173742373 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_38 is on socket 3
+1528480547.173744253 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_39 is on socket 3
+1528480547.173746153 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_40 is on socket 3
+1528480547.173748181 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_41 is on socket 3
+1528480547.173750119 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_42 is on socket 3
+1528480547.173752360 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_43 is on socket 3
+1528480547.173754233 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_44 is on socket 3
+1528480547.173756777 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_45 is on socket 3
+1528480547.173759110 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_46 is on socket 3
+1528480547.173775825 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_47 is on socket 3
+1528480547.173780885 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_48 is on socket 3
+1528480547.173782765 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_49 is on socket 3
+1528480547.173784569 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_50 is on socket 3
+1528480547.173786329 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_51 is on socket 3
+1528480547.173788371 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_52 is on socket 3
+1528480547.173790570 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_53 is on socket 3
+1528480547.173792413 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_54 is on socket 3
+1528480547.173794572 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_55 is on socket 3
+1528480547.173796781 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_56 is on socket 3
+1528480547.173799008 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_57 is on socket 3
+1528480547.173801788 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_58 is on socket 3
+1528480547.173818050 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_59 is on socket 3
+1528480547.173823214 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_60 is on socket 3
+1528480547.173825170 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_61 is on socket 3
+1528480547.173826978 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_62 is on socket 3
+1528480547.173829054 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_63 is on socket 3
+1528480547.173831392 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_64 is on socket 3
+1528480547.173833564 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_65 is on socket 3
+1528480547.173835357 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_66 is on socket 3
+1528480547.173837126 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_67 is on socket 3
+1528480547.173838878 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_68 is on socket 3
+1528480547.173841099 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_69 is on socket 3
+1528480547.173857593 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_70 is on socket 3
+1528480547.173862699 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_71 is on socket 3
+1528480547.173864583 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_72 is on socket 3
+1528480547.173866406 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_73 is on socket 3
+1528480547.173868232 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_74 is on socket 3
+1528480547.173870275 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_75 is on socket 3
+1528480547.173872372 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_76 is on socket 3
+1528480547.173874265 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_77 is on socket 3
+1528480547.173876463 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_78 is on socket 3
+1528480547.173878593 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_79 is on socket 3
+1528480547.173880629 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_80 is on socket 3
+1528480547.173897293 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_81 is on socket 3
+1528480547.173902279 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_82 is on socket 3
+1528480547.173904163 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_83 is on socket 3
+1528480547.173906056 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_84 is on socket 3
+1528480547.173908103 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_85 is on socket 3
+1528480547.173910174 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_86 is on socket 3
+1528480547.173912356 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_87 is on socket 3
+1528480547.173914210 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_88 is on socket 3
+1528480547.173916248 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_89 is on socket 3
+1528480547.173918958 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_90 is on socket 3
+1528480547.173921065 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_91 is on socket 3
+1528480547.173923377 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_92 is on socket 3
+1528480547.173939065 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_93 is on socket 3
+1528480547.173944220 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_94 is on socket 3
+1528480547.173946349 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_95 is on socket 3
+1528480547.173948214 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_96 is on socket 3
+1528480547.173950234 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_97 is on socket 3
+1528480547.173952264 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_98 is on socket 3
+1528480547.173954109 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_99 is on socket 3
+1528480547.173955991 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_100 is on socket 3
+1528480547.173958316 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_101 is on socket 3
+1528480547.173960506 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_102 is on socket 3
+1528480547.173963611 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_103 is on socket 3
+1528480547.173980439 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_104 is on socket 3
+1528480547.173985380 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_105 is on socket 3
+1528480547.173987152 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_106 is on socket 3
+1528480547.173988950 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_107 is on socket 3
+1528480547.173991001 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_108 is on socket 3
+1528480547.173993201 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_109 is on socket 3
+1528480547.173995370 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_110 is on socket 3
+1528480547.173997390 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_111 is on socket 3
+1528480547.173999903 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_112 is on socket 3
+1528480547.174002021 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_113 is on socket 3
+1528480547.174004566 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_114 is on socket 3
+1528480547.174021026 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_115 is on socket 3
+1528480547.174026098 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_116 is on socket 3
+1528480547.174028025 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_117 is on socket 3
+1528480547.174029831 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_118 is on socket 3
+1528480547.174031919 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_119 is on socket 3
+1528480547.174034002 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_120 is on socket 3
+1528480547.174036289 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_121 is on socket 3
+1528480547.174038230 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_122 is on socket 3
+1528480547.174040827 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_123 is on socket 3
+1528480547.174043028 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_124 is on socket 3
+1528480547.174045474 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_125 is on socket 3
+1528480547.174047649 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_126 is on socket 3
+1528480547.174063110 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_127 is on socket 3
+1528480547.174068288 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_128 is on socket 0
+1528480547.174070102 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_129 is on socket 0
+1528480547.174071938 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_130 is on socket 0
+1528480547.174074782 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_131 is on socket 0
+1528480547.174076947 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_132 is on socket 0
+1528480547.174078836 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_133 is on socket 0
+1528480547.174080663 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_134 is on socket 0
+1528480547.174083361 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_135 is on socket 0
+1528480547.174085577 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_136 is on socket 0
+1528480547.174087979 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_137 is on socket 0
+1528480547.174103230 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_138 is on socket 0
+1528480547.174108449 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_139 is on socket 0
+1528480547.174110267 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_140 is on socket 0
+1528480547.174112178 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_141 is on socket 0
+1528480547.174114092 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_142 is on socket 0
+1528480547.174116249 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_143 is on socket 0
+1528480547.174118824 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_144 is on socket 0
+1528480547.174120731 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_145 is on socket 0
+1528480547.174123514 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_146 is on socket 0
+1528480547.174125693 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_147 is on socket 0
+1528480547.174127883 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_148 is on socket 0
+1528480547.174144041 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_149 is on socket 0
+1528480547.174149046 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_150 is on socket 0
+1528480547.174150969 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_151 is on socket 0
+1528480547.174152866 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_152 is on socket 0
+1528480547.174154840 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_153 is on socket 0
+1528480547.174156990 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_154 is on socket 0
+1528480547.174159195 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_155 is on socket 0
+1528480547.174161322 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_156 is on socket 0
+1528480547.174164087 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_157 is on socket 0
+1528480547.174166218 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_158 is on socket 0
+1528480547.174168272 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_159 is on socket 0
+1528480547.174185949 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_160 is on socket 0
+1528480547.174190863 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_161 is on socket 0
+1528480547.174192750 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_162 is on socket 0
+1528480547.174194529 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_163 is on socket 0
+1528480547.174198703 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_164 is on socket 0
+1528480547.174201018 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_165 is on socket 0
+1528480547.174202781 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_166 is on socket 0
+1528480547.174204675 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_167 is on socket 0
+1528480547.174206717 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_168 is on socket 0
+1528480547.174208883 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_169 is on socket 0
+1528480547.174210921 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_170 is on socket 0
+1528480547.174213128 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_171 is on socket 0
+1528480547.174229888 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_172 is on socket 0
+1528480547.174235106 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_173 is on socket 0
+1528480547.174236927 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_174 is on socket 0
+1528480547.174238730 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_175 is on socket 0
+1528480547.174240721 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_176 is on socket 0
+1528480547.174242778 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_177 is on socket 0
+1528480547.174244999 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_178 is on socket 0
+1528480547.174247167 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_179 is on socket 0
+1528480547.174249973 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_180 is on socket 0
+1528480547.174252278 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_181 is on socket 0
+1528480547.174254392 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_182 is on socket 0
+1528480547.174271069 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_183 is on socket 0
+1528480547.174276126 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_184 is on socket 0
+1528480547.174278085 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_185 is on socket 0
+1528480547.174279852 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_186 is on socket 0
+1528480547.174281775 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_187 is on socket 0
+1528480547.174283993 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_188 is on socket 0
+1528480547.174286305 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_189 is on socket 0
+1528480547.174288382 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_190 is on socket 0
+1528480547.174291078 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_191 is on socket 0
+1528480547.174293248 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_192 is on socket 0
+1528480547.174295372 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_193 is on socket 0
+1528480547.174311747 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_194 is on socket 0
+1528480547.174316877 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_195 is on socket 0
+1528480547.174318706 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_196 is on socket 0
+1528480547.174320444 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_197 is on socket 0
+1528480547.174322078 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_198 is on socket 0
+1528480547.174324352 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_199 is on socket 0
+1528480547.174326508 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_200 is on socket 0
+1528480547.174328429 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_201 is on socket 0
+1528480547.174330261 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_202 is on socket 0
+1528480547.174332345 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_203 is on socket 0
+1528480547.174334665 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_204 is on socket 0
+1528480547.174351506 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_205 is on socket 0
+1528480547.174356610 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_206 is on socket 0
+1528480547.174358595 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_207 is on socket 0
+1528480547.174360521 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_208 is on socket 0
+1528480547.174362556 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_209 is on socket 0
+1528480547.174364637 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_210 is on socket 0
+1528480547.174366908 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_211 is on socket 0
+1528480547.174369083 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_212 is on socket 0
+1528480547.174371527 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_213 is on socket 0
+1528480547.174373734 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_214 is on socket 0
+1528480547.174375772 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_215 is on socket 0
+1528480547.174377932 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_216 is on socket 0
+1528480547.174394429 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_217 is on socket 0
+1528480547.174399353 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_218 is on socket 0
+1528480547.174401170 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_219 is on socket 0
+1528480547.174402997 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_220 is on socket 0
+1528480547.174405094 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_221 is on socket 0
+1528480547.174407169 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_222 is on socket 0
+1528480547.174409211 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_223 is on socket 0
+1528480547.174411295 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_224 is on socket 0
+1528480547.174414003 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_225 is on socket 0
+1528480547.174416200 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_226 is on socket 0
+1528480547.174418240 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_227 is on socket 0
+1528480547.174434581 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_228 is on socket 0
+1528480547.174439611 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_229 is on socket 0
+1528480547.174441438 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_230 is on socket 0
+1528480547.174443346 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_231 is on socket 0
+1528480547.174445418 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_232 is on socket 0
+1528480547.174447590 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_233 is on socket 0
+1528480547.174449352 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_234 is on socket 0
+1528480547.174451174 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_235 is on socket 0
+1528480547.174453599 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_236 is on socket 0
+1528480547.174455696 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_237 is on socket 0
+1528480547.174457893 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_238 is on socket 0
+1528480547.174473295 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_239 is on socket 0
+1528480547.174478433 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_240 is on socket 0
+1528480547.174480335 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_241 is on socket 0
+1528480547.174482150 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_242 is on socket 0
+1528480547.174485372 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_243 is on socket 0
+1528480547.174487439 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_244 is on socket 0
+1528480547.174489625 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_245 is on socket 0
+1528480547.174492335 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_246 is on socket 0
+1528480547.174494786 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_247 is on socket 0
+1528480547.174496859 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_248 is on socket 0
+1528480547.174499642 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_249 is on socket 0
+1528480547.174517050 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_250 is on socket 0
+1528480547.174522010 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_251 is on socket 0
+1528480547.174524021 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_252 is on socket 0
+1528480547.174525860 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_253 is on socket 0
+1528480547.174527812 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_254 is on socket 0
+1528480547.174530230 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_255 is on socket 0
+1528480547.174532395 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_256 is on socket 1
+1528480547.174534619 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_257 is on socket 1
+1528480547.174537052 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_258 is on socket 1
+1528480547.174539343 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_259 is on socket 1
+1528480547.174541524 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_260 is on socket 1
+1528480547.174543992 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_261 is on socket 1
+1528480547.174559649 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_262 is on socket 1
+1528480547.174564801 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_263 is on socket 1
+1528480547.174566672 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_264 is on socket 1
+1528480547.174568605 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_265 is on socket 1
+1528480547.174570544 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_266 is on socket 1
+1528480547.174572727 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_267 is on socket 1
+1528480547.174574596 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_268 is on socket 1
+1528480547.174576496 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_269 is on socket 1
+1528480547.174579152 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_270 is on socket 1
+1528480547.174581364 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_271 is on socket 1
+1528480547.174583526 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_272 is on socket 1
+1528480547.174600410 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_273 is on socket 1
+1528480547.174605369 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_274 is on socket 1
+1528480547.174607315 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_275 is on socket 1
+1528480547.174609215 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_276 is on socket 1
+1528480547.174611280 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_277 is on socket 1
+1528480547.174613356 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_278 is on socket 1
+1528480547.174615538 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_279 is on socket 1
+1528480547.174617726 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_280 is on socket 1
+1528480547.174620426 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_281 is on socket 1
+1528480547.174622629 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_282 is on socket 1
+1528480547.174624746 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_283 is on socket 1
+1528480547.174640594 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_284 is on socket 1
+1528480547.174645646 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_285 is on socket 1
+1528480547.174647454 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_286 is on socket 1
+1528480547.174649293 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_287 is on socket 1
+1528480547.174651370 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_288 is on socket 1
+1528480547.174653549 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_289 is on socket 1
+1528480547.174655748 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_290 is on socket 1
+1528480547.174657916 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_291 is on socket 1
+1528480547.174660703 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_292 is on socket 1
+1528480547.174662984 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_293 is on socket 1
+1528480547.174664960 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_294 is on socket 1
+1528480547.174681338 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_295 is on socket 1
+1528480547.174686246 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_296 is on socket 1
+1528480547.174688173 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_297 is on socket 1
+1528480547.174689997 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_298 is on socket 1
+1528480547.174692019 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_299 is on socket 1
+1528480547.174694223 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_300 is on socket 1
+1528480547.174696477 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_301 is on socket 1
+1528480547.174698354 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_302 is on socket 1
+1528480547.174700738 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_303 is on socket 1
+1528480547.174702967 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_304 is on socket 1
+1528480547.174705050 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_305 is on socket 1
+1528480547.174707143 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_306 is on socket 1
+1528480547.174722948 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_307 is on socket 1
+1528480547.174728204 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_308 is on socket 1
+1528480547.174730058 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_309 is on socket 1
+1528480547.174731851 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_310 is on socket 1
+1528480547.174733893 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_311 is on socket 1
+1528480547.174735986 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_312 is on socket 1
+1528480547.174738790 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_313 is on socket 1
+1528480547.174740923 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_314 is on socket 1
+1528480547.174743050 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_315 is on socket 1
+1528480547.174745653 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_316 is on socket 1
+1528480547.174747961 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_317 is on socket 1
+1528480547.174763152 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_318 is on socket 1
+1528480547.174768283 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_319 is on socket 1
+1528480547.174770167 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_320 is on socket 1
+1528480547.174772072 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_321 is on socket 1
+1528480547.174773964 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_322 is on socket 1
+1528480547.174776110 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_323 is on socket 1
+1528480547.174778286 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_324 is on socket 1
+1528480547.174780448 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_325 is on socket 1
+1528480547.174783230 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_326 is on socket 1
+1528480547.174785462 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_327 is on socket 1
+1528480547.174787430 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_328 is on socket 1
+1528480547.174802589 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_329 is on socket 1
+1528480547.174807579 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_330 is on socket 1
+1528480547.174809427 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_331 is on socket 1
+1528480547.174811243 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_332 is on socket 1
+1528480547.174813280 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_333 is on socket 1
+1528480547.174815279 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_334 is on socket 1
+1528480547.174817175 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_335 is on socket 1
+1528480547.174819065 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_336 is on socket 1
+1528480547.174821392 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_337 is on socket 1
+1528480547.174823608 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_338 is on socket 1
+1528480547.174826376 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_339 is on socket 1
+1528480547.174843351 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_340 is on socket 1
+1528480547.174848330 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_341 is on socket 1
+1528480547.174850138 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_342 is on socket 1
+1528480547.174851972 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_343 is on socket 1
+1528480547.174855394 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_344 is on socket 1
+1528480547.174857394 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_345 is on socket 1
+1528480547.174859297 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_346 is on socket 1
+1528480547.174861655 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_347 is on socket 1
+1528480547.174863663 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_348 is on socket 1
+1528480547.174865984 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_349 is on socket 1
+1528480547.174868107 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_350 is on socket 1
+1528480547.174870241 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_351 is on socket 1
+1528480547.174886574 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_352 is on socket 1
+1528480547.174891676 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_353 is on socket 1
+1528480547.174893492 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_354 is on socket 1
+1528480547.174895397 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_355 is on socket 1
+1528480547.174898704 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_356 is on socket 1
+1528480547.174901013 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_357 is on socket 1
+1528480547.174903017 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_358 is on socket 1
+1528480547.174905201 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_359 is on socket 1
+1528480547.174907556 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_360 is on socket 1
+1528480547.174909950 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_361 is on socket 1
+1528480547.174912174 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_362 is on socket 1
+1528480547.174928022 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_363 is on socket 1
+1528480547.174933098 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_364 is on socket 1
+1528480547.174935030 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_365 is on socket 1
+1528480547.174936844 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_366 is on socket 1
+1528480547.174938748 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_367 is on socket 1
+1528480547.174941398 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_368 is on socket 1
+1528480547.174943334 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_369 is on socket 1
+1528480547.174945132 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_370 is on socket 1
+1528480547.174947608 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_371 is on socket 1
+1528480547.174949583 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_372 is on socket 1
+1528480547.174951791 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_373 is on socket 1
+1528480547.174968002 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_374 is on socket 1
+1528480547.174973031 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_375 is on socket 1
+1528480547.174974949 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_376 is on socket 1
+1528480547.174976854 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_377 is on socket 1
+1528480547.174978782 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_378 is on socket 1
+1528480547.174980827 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_379 is on socket 1
+1528480547.174983070 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_380 is on socket 1
+1528480547.174985316 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_381 is on socket 1
+1528480547.174987313 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_382 is on socket 1
+1528480547.174989587 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_383 is on socket 1
+1528480547.174991526 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_384 is on socket 2
+1528480547.175008887 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_385 is on socket 2
+1528480547.175013974 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_386 is on socket 2
+1528480547.175015898 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_387 is on socket 2
+1528480547.175017780 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_388 is on socket 2
+1528480547.175019842 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_389 is on socket 2
+1528480547.175021944 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_390 is on socket 2
+1528480547.175024159 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_391 is on socket 2
+1528480547.175026438 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_392 is on socket 2
+1528480547.175028644 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_393 is on socket 2
+1528480547.175030772 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_394 is on socket 2
+1528480547.175032956 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_395 is on socket 2
+1528480547.175035720 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_396 is on socket 2
+1528480547.175050836 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_397 is on socket 2
+1528480547.175055968 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_398 is on socket 2
+1528480547.175070954 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_399 is on socket 2
+1528480547.175073077 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_400 is on socket 2
+1528480547.175075013 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_401 is on socket 2
+1528480547.175076782 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_402 is on socket 2
+1528480547.175078779 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_403 is on socket 2
+1528480547.175080904 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_404 is on socket 2
+1528480547.175082792 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_405 is on socket 2
+1528480547.175084438 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_406 is on socket 2
+1528480547.175086092 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_407 is on socket 2
+1528480547.175103074 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_408 is on socket 2
+1528480547.175108340 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_409 is on socket 2
+1528480547.175110166 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_410 is on socket 2
+1528480547.175112053 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_411 is on socket 2
+1528480547.175113919 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_412 is on socket 2
+1528480547.175116116 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_413 is on socket 2
+1528480547.175118182 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_414 is on socket 2
+1528480547.175120395 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_415 is on socket 2
+1528480547.175122431 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_416 is on socket 2
+1528480547.175125267 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_417 is on socket 2
+1528480547.175127578 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_418 is on socket 2
+1528480547.175143430 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_419 is on socket 2
+1528480547.175148630 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_420 is on socket 2
+1528480547.175150439 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_421 is on socket 2
+1528480547.175152169 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_422 is on socket 2
+1528480547.175155475 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_423 is on socket 2
+1528480547.175157408 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_424 is on socket 2
+1528480547.175159463 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_425 is on socket 2
+1528480547.175161626 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_426 is on socket 2
+1528480547.175163779 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_427 is on socket 2
+1528480547.175166621 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_428 is on socket 2
+1528480547.175168909 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_429 is on socket 2
+1528480547.175185494 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_430 is on socket 2
+1528480547.175190622 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_431 is on socket 2
+1528480547.175192416 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_432 is on socket 2
+1528480547.175194387 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_433 is on socket 2
+1528480547.175196319 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_434 is on socket 2
+1528480547.175198482 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_435 is on socket 2
+1528480547.175200352 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_436 is on socket 2
+1528480547.175202289 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_437 is on socket 2
+1528480547.175204096 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_438 is on socket 2
+1528480547.175206287 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_439 is on socket 2
+1528480547.175208314 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_440 is on socket 2
+1528480547.175210624 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_441 is on socket 2
+1528480547.175225457 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_442 is on socket 2
+1528480547.175230347 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_443 is on socket 2
+1528480547.175232100 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_444 is on socket 2
+1528480547.175233923 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_445 is on socket 2
+1528480547.175235646 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_446 is on socket 2
+1528480547.175237840 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_447 is on socket 2
+1528480547.175240009 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_448 is on socket 2
+1528480547.175242749 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_449 is on socket 2
+1528480547.175244919 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_450 is on socket 2
+1528480547.175247108 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_451 is on socket 2
+1528480547.175249840 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_452 is on socket 2
+1528480547.175266071 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_453 is on socket 2
+1528480547.175270896 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_454 is on socket 2
+1528480547.175272749 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_455 is on socket 2
+1528480547.175274531 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_456 is on socket 2
+1528480547.175277429 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_457 is on socket 2
+1528480547.175279380 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_458 is on socket 2
+1528480547.175281468 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_459 is on socket 2
+1528480547.175283871 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_460 is on socket 2
+1528480547.175285885 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_461 is on socket 2
+1528480547.175288409 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_462 is on socket 2
+1528480547.175290594 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_463 is on socket 2
+1528480547.175306307 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_464 is on socket 2
+1528480547.175311188 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_465 is on socket 2
+1528480547.175313011 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_466 is on socket 2
+1528480547.175314786 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_467 is on socket 2
+1528480547.175318042 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_468 is on socket 2
+1528480547.175319988 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_469 is on socket 2
+1528480547.175322024 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_470 is on socket 2
+1528480547.175323709 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_471 is on socket 2
+1528480547.175325591 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_472 is on socket 2
+1528480547.175327913 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_473 is on socket 2
+1528480547.175329788 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_474 is on socket 2
+1528480547.175346774 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_475 is on socket 2
+1528480547.175351622 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_476 is on socket 2
+1528480547.175353580 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_477 is on socket 2
+1528480547.175355417 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_478 is on socket 2
+1528480547.175358111 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_479 is on socket 2
+1528480547.175360067 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_480 is on socket 2
+1528480547.175362122 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_481 is on socket 2
+1528480547.175364319 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_482 is on socket 2
+1528480547.175366295 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_483 is on socket 2
+1528480547.175368417 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_484 is on socket 2
+1528480547.175370560 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_485 is on socket 2
+1528480547.175373258 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_486 is on socket 2
+1528480547.175388095 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_487 is on socket 2
+1528480547.175393222 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_488 is on socket 2
+1528480547.175395038 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_489 is on socket 2
+1528480547.175396851 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_490 is on socket 2
+1528480547.175497748 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_491 is on socket 2
+1528480547.175516909 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_492 is on socket 2
+1528480547.175523308 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_493 is on socket 2
+1528480547.175532948 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_494 is on socket 2
+1528480547.175538101 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_495 is on socket 2
+1528480547.175543391 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_496 is on socket 2
+1528480547.175552239 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_497 is on socket 2
+1528480547.175619885 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_498 is on socket 2
+1528480547.175628897 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_499 is on socket 2
+1528480547.175633873 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_500 is on socket 2
+1528480547.175638918 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_501 is on socket 2
+1528480547.175644084 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_502 is on socket 2
+1528480547.175653307 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_503 is on socket 2
+1528480547.175658279 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_504 is on socket 2
+1528480547.175663331 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_505 is on socket 2
+1528480547.175672598 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_506 is on socket 2
+1528480547.175677627 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_507 is on socket 2
+1528480547.175682562 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_508 is on socket 2
+1528480547.175733501 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_509 is on socket 2
+1528480547.175742510 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_510 is on socket 2
+1528480547.175747385 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_511 is on socket 2
+1528480547.176243082 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_12 is on socket 3
+1528480547.176253257 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_11 is on socket 3
+1528480547.176258450 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_6 is on socket 3
+1528480547.176267990 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_5 is on socket 3
+1528480547.176375244 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_4 is on socket 3
+1528480547.176384703 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_3 is on socket 3
+1528480547.176389733 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_2 is on socket 3
+1528480547.176400466 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Hugepage /dev/hugepages/homa4map_0 is on socket 3
+1528480547.177584771 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x2000000 bytes
+1528480547.177635917 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9074200000 (size = 0x2000000)
+1528480547.177865902 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.177884735 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9073e00000 (size = 0x200000)
+1528480547.177901483 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.177913479 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9073a00000 (size = 0x200000)
+1528480547.177930176 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.177945802 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9073600000 (size = 0x200000)
+1528480547.177965540 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.177981355 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9073200000 (size = 0x200000)
+1528480547.178001976 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.178017310 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9072e00000 (size = 0x200000)
+1528480547.178037697 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x800000 bytes
+1528480547.178053055 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9072400000 (size = 0x800000)
+1528480547.178110863 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.178126940 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9072000000 (size = 0x200000)
+1528480547.178147834 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0xcc00000 bytes
+1528480547.178165668 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9065200000 (size = 0xcc00000)
+1528480547.179464265 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.179486031 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9064e00000 (size = 0x200000)
+1528480547.179507742 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0xfc00000 bytes
+1528480547.179527570 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9055000000 (size = 0xfc00000)
+1528480547.181066433 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.181086807 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9054c00000 (size = 0x200000)
+1528480547.181107107 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.181123313 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9054800000 (size = 0x200000)
+1528480547.181146266 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0xfc00000 bytes
+1528480547.181165443 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9044a00000 (size = 0xfc00000)
+1528480547.182651767 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.182671837 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9044600000 (size = 0x200000)
+1528480547.182691325 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.182707564 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9044200000 (size = 0x200000)
+1528480547.182730879 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0xfc00000 bytes
+1528480547.182748645 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9034400000 (size = 0xfc00000)
+1528480547.184245325 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Ask a virtual area of 0x200000 bytes
+1528480547.184267332 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Virtual area found at 0x7f9034000000 (size = 0x200000)
+1528480547.186486189 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Requesting 25 pages of size 1024MB from socket 0
+1528480547.186496999 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Requesting 25 pages of size 1024MB from socket 1
+1528480547.186500123 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Requesting 25 pages of size 1024MB from socket 2
+1528480547.186503201 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Requesting 25 pages of size 1024MB from socket 3
+1528480547.186506906 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Requesting 128 pages of size 2MB from socket 0
+1528480547.186510184 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Requesting 128 pages of size 2MB from socket 1
+1528480547.186513613 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Requesting 128 pages of size 2MB from socket 2
+1528480547.186516714 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Requesting 128 pages of size 2MB from socket 3
+1528480547.289815918 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: TSC frequency is ~3192307 Khz
+1528396466.588178646 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: Probing VFIO support...
+1528396466.588212907 FileLogger.cc:100 in write NOTICE[1]: DPDK: EAL: VFIO support initialized
+1528396466.936892124 CoordinatorMain.cc:153 in main ERROR[1]: Fatal error in coordinator at ???: RAMCloud::DriverException: Failed to allocate memory for packet buffers:2  No such file or directory, thrown at DpdkDriver at src/DpdkDriver.cc:172
