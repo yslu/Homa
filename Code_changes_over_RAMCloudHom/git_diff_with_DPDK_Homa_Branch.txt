@@ -1,0 +1,159 @@
+diff --git a/GNUmakefile b/GNUmakefile
+index 0b43a2c..71573c7 100644
+--- a/GNUmakefile
++++ b/GNUmakefile
+@@ -16,7 +16,7 @@ SSE ?= sse4.2
+ ARCH ?= native
+ COMPILER ?= gnu
+ CCACHE ?= no
+-GLIBCXX_USE_CXX11_ABI ?= yes
++GLIBCXX_USE_CXX11_ABI ?= no
+ LINKER ?= default
+ SANITIZER ?= none
+ VALGRIND ?= no
+@@ -216,7 +216,7 @@ endif
+ #   "n" to build without shared libraries, in which case you will need to
+ #   modify other variables below here).
+ # * Then recompile: "make clean; make"
+-DPDK ?= yes
++# DPDK ?= yes
+ ifeq ($(DPDK),yes)
+ 
+ # Uncomment the line below and modify its value (or set the value in
+@@ -224,8 +224,8 @@ ifeq ($(DPDK),yes)
+ # (the parent of the "x86_64-native-linuxapp-gcc" directory). Or, leave
+ # this variable undefined if DPDK is installed in the standard system
+ # locations.
+-DPDK_DIR ?= /home/homa/platformlab/RAMCloud/deps/dpdk-17.11
+-#DPDK_DIR ?= 
++# DPDK_DIR ?= dpdk
++
+ # Change the definition below if you compiled DPDK without shared libraries.
+ # Note: this configuration is not well tested and may not work.
+ DPDK_SHARED ?= yes
+diff --git a/scripts/common.py b/scripts/common.py
+index 14fb817..cb84a11 100644
+--- a/scripts/common.py
++++ b/scripts/common.py
+@@ -95,8 +95,6 @@ class Sandbox(object):
+ 
+             if is_server:
+                 # Assumes scripts are at same path on remote machine
+-                print("Server")
+-                print(host)
+                 sh_command = ['ssh', host,
+                               self.sudo,
+                               '%s/serverexec' % remote_scripts_path,
+@@ -121,8 +119,6 @@ class Sandbox(object):
+             self.processes.append(process)
+             return process
+         else:
+-            print("124")
+-            print(host)
+             sh_command = ['ssh', host,
+                           self.sudo,
+                           '%s/remoteexec.py' % remote_scripts_path,
+diff --git a/scripts/config.py b/scripts/config.py
+index 1c7089d..19535ec 100644
+--- a/scripts/config.py
++++ b/scripts/config.py
+@@ -96,14 +96,12 @@ second_backup_port = 12248
+ 
+ # Command-line argument specifying where the server should store the segment
+ # replicas by default.
+-#default_disks = '-f /dev/sda2,/dev/sdb2'
+-default_disks = '-f /home/homa/platformlab/RAMCloud/backup1,/home/homa/platformlab/RAMCloud/backup2'
++default_disks = '-f /dev/sda2,/dev/sdb2'
++
+ # List of machines available to use as servers or clients; see
+ # common.getHosts() for more information on how to set this variable.
+-#hosts = None
+-#hosts = [('homa1','10.145.94.33',0),('homa2','10.145.94.43',1),('homa3','10.145.94.53',2),('homa4','10.145.94.63',3)]
+-#hosts = [('homa1','10.10.10.11',0),('homa3','10.10.10.13',2),('homa4','10.10.10.12',1)]
+-hosts = [('homa1','10.10.10.11',0),('homa2','10.10.10.12',1),('homa3','10.10.10.13',2),('homa4','10.10.10.14',3)]
++hosts = None
++
+ class NoOpClusterHooks:
+     def __init__(self):
+         pass
+diff --git a/scripts/dpdkBuild.sh b/scripts/dpdkBuild.sh
+index efd4758..97cf236 100755
+--- a/scripts/dpdkBuild.sh
++++ b/scripts/dpdkBuild.sh
+@@ -5,11 +5,11 @@
+ 
+ # MLX4 driver seems to have problems working with DPDK shared libraries
+ # on the CloudLab m510 cluster.
+-DPDK_OPTIONS="CONFIG_RTE_BUILD_SHARED_LIB=y "
++DPDK_OPTIONS="CONFIG_RTE_BUILD_SHARED_LIB=n "
+ if [ "$MLNX_DPDK" != "y" ];
+ then
+     # Use DPDK community release.
+-    DPDK_VER="17.11"
++    DPDK_VER="18.02"
+     DPDK="dpdk-${DPDK_VER}"
+     DPDK_SRC="http://dpdk.org/browse/dpdk/snapshot/${DPDK}.tar.gz"
+ else
+diff --git a/scripts/dpdkInit.sh b/scripts/dpdkInit.sh
+index 807caff..a6f8446 100755
+--- a/scripts/dpdkInit.sh
++++ b/scripts/dpdkInit.sh
+@@ -7,8 +7,7 @@
+ #      "dpdk" subdirectory, in which DPDK must have been properly built.
+ 
+ 
+-#if [ ! -f dpdk/x86_64-native-linuxapp-gcc/kmod/igb_uio.ko ]
+-if [ ! -f ./deps/dpdk-18.05/x86_64-native-linuxapp-gcc/kmod/igb_uio.ko ]
++if [ ! -f dpdk/x86_64-native-linuxapp-gcc/kmod/igb_uio.ko ]
+ then
+     echo "Driver file dpdk/x86_64-native-linuxapp-gcc/kmod/igb_uio.ko" \
+          "doesn't exist." \
+@@ -26,9 +25,6 @@ chmod 777 /mnt/huge
+ # with "dpdk/tools/dpdk_nic_bind.py --status": select the numbers for
+ # eth1.
+ modprobe uio
+-insmod ./deps/dpdk-18.05/x86_64-native-linuxapp-gcc/kmod/igb_uio.ko
+-#insmod dpdk/x86_64-native-linuxapp-gcc/kmod/igb_uio.ko
+-#dpdk/tools/dpdk_nic_bind.py --bind=igb_uio 04:00.0
+-/usr/share/dpdk/tools/dpdk_nic_bind.py --bind=igb_uio 04:00.0
+-
++insmod dpdk/x86_64-native-linuxapp-gcc/kmod/igb_uio.ko
++dpdk/tools/dpdk_nic_bind.py --bind=igb_uio 04:00.0
+ chmod 666 /dev/uio0
+diff --git a/src/DpdkDriver.cc b/src/DpdkDriver.cc
+index b4364be..eb936e5 100644
+--- a/src/DpdkDriver.cc
++++ b/src/DpdkDriver.cc
+@@ -71,8 +71,6 @@ namespace {
+ // Short-hand to obtain a reference to the metadata storage space that we
+ // used to store the PacketBufType.
+ #define packet_buf_type(payload) *(payload - PACKETBUF_TYPE_SIZE)
+-#define	PKT_MBUF_DATA_SIZE	RTE_MBUF_DEFAULT_BUF_SIZE
+-#define	NB_PKT_MBUF	8192
+ 
+ // Short-hand to obtain the starting address of a DPDK rte_mbuf based on its
+ // payload address.
+@@ -153,7 +151,7 @@ DpdkDriver::DpdkDriver(Context* context, int port)
+     }
+     nameBuffer[sizeof(nameBuffer)-1] = 0;   // Needed if name was too long.
+     const char *argv[] = {"rc", "--file-prefix", nameBuffer, "-c", "1",
+-            "-n", "1", "m", "5", "--log-level", "10", NULL};
++            "-n", "1", NULL};
+     int argc = static_cast<int>(sizeof(argv) / sizeof(argv[0])) - 1;
+ 
+     rte_openlog_stream(fileLogger.getFile());
+@@ -169,10 +167,10 @@ DpdkDriver::DpdkDriver(Context* context, int port)
+             rte_pktmbuf_pool_init, NULL,
+             rte_pktmbuf_init, NULL,
+             rte_socket_id(), 0);
++
+     if (!mbufPool) {
+-        printf("mbufPool = %p \n", mbufPool);
+         throw DriverException(HERE, format(
+-                "Failed to allocate memory for packet buffers:%d  %s",rte_errno,
++                "Failed to allocate memory for packet buffers: %s",
+                 rte_strerror(rte_errno)));
+     }
+ 
+homa@homa1:~/platformlab/RAMCloud$ 
+
