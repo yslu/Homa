@@ -1,0 +1,70 @@
+
+
+
+Platform Lab useful links:
+https://ramcloud.atlassian.net/wiki/spaces/RAM/pages/6848532/Setting+Up+a+RAMCloud+Cluster
+https://ramcloud.atlassian.net/wiki/spaces/RAM/pages/6848604/How+To+Run+Clusterperf
+https://ramcloud.atlassian.net/wiki/spaces/RAM/pages/6848614/General+Information+for+Developers
+
+Main page - https://platformlab.stanford.edu/
+
+Github resources:
+Code base - https://github.com/PlatformLab
+Homa branch = homa+transport
+Regular branch = master
+
+Email communication with RAMCloud dev:
+
+https://mailman.stanford.edu/pipermail/ramcloud-dev/2018-April/thread.html
+
+RAMCloud research publication:
+https://files.slack.com/files-pri/T2TL9T2Q1-FA0GV1K5Y/homa.pdf
+
+
+RAMCloud presentation from Yilong:
+https://platformlab.stanford.edu/Presentations/2018/Yilong%20Li.pdf
+
+
+RAMCloud video links:
+https://roamerco-my.sharepoint.com/:f:/g/personal/whoeverys_yunsong_co/EnAH3l_5J3tCghouKLG9g-cBTa2OXLeZjUAmtrxPQgQ6Mw?e=PK81yh
+
+How to perform NFS setup:
+https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-14-04
+
+
+How to check cluster performance:
+https://ramcloud.atlassian.net/wiki/spaces/RAM/pages/6848752/clusterperf+benchmarks
+
+
+
+
+DPDK Installation useful steps:
+
+Please checkout DPDK Installation subheading in Report https://docs.google.com/document/d/1Kzb2Ta1yN3xbunGFIeTFHkcxg2t8-CZa-IUaRFjX2HI/edit#heading=h.5jon4ns15h09
+
+
+Final Report in doc format:
+https://docs.google.com/document/d/1Kzb2Ta1yN3xbunGFIeTFHkcxg2t8-CZa-IUaRFjX2HI/edit#heading=h.5jon4ns15h09
+
+Analysis output - spreadsheet link: https://docs.google.com/document/d/1Aoqta8-XRFoTKDdRMrDKVj1tPMk9IUKoJCl27tXv7rc/edit
+
+https://docs.google.com/spreadsheets/d/1cK-BF9fPcOsRHnzOJ_67aH3Ns5SKzDRcG8ibFIthz58/edit#gid=0
+
+Configurations / set up related info 
+How to configure and set Java path, Packages to install, useful commands, GCC version check, GNUmake file changes, OpenSsh server, making ssh passwordless, creating replicas of files, changing the default_disks can be find in the below report.
+https://docs.google.com/document/d/1Kzb2Ta1yN3xbunGFIeTFHkcxg2t8-CZa-IUaRFjX2HI/edit#heading=h.5jon4ns15h09
+
+Troubleshooting guide
+Issues / resolutions related to following topics 
+Ulimit
+Sudoers
+Image privileges
+FPIC compilation error
+Shared compilation FPIC error
+Huge pages info
+No free pages info
+Partial resolution of rte_service_init()
+
+Above topics are covered in https://docs.google.com/document/d/1Kzb2Ta1yN3xbunGFIeTFHkcxg2t8-CZa-IUaRFjX2HI/edit#heading=h.5jon4ns15h09
+
+
